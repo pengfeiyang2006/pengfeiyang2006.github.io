@@ -1,33 +1,24 @@
 # 发布说明 · 宇宙演变论 · 完整理论
 
-本目录（`publish/`）包含一个已转换好的静态站点：`index.html`。
-它是单文件、自包含（内联 CSS、无外部依赖），GitHub Pages 原生即可渲染。
+本目录（`publish/`）包含已转换好的静态站点：`index.html`。
+单文件、自包含（内联 CSS、无外部依赖），GitHub Pages 原生渲染。
 
-## 你只需做两件事（我无法替你做的）
+## 当前状态：已上线
 
-### 1. 建仓库（GitHub 网页上操作）
-- 注册 / 登录 GitHub（https://github.com ）。
-- 右上角 `+` → `New repository`。
-- **仓库名必须**为：`你的用户名.github.io`（例：用户 `zhangsan` → `zhangsan.github.io`）。
-- 可见性选 `Public`，可勾选 `Add a README file`。
-- 点 `Create repository`。
+- 站点地址：**https://pengfeiyang2006.github.io**
+- 仓库：`pengfeiyang2006/pengfeiyang2006.github.io`
 
-### 2. 把本目录内容推上去
-在本地 `publish/` 目录下执行（把 `你的用户名` 换成实际用户名）：
+## 更新流程（理论文档修订后）
+
+1. 重新生成站点：`python build_site.py`（在 `理论/` 目录下执行）
+2. 把新的 `publish/index.html` 推到仓库：
 
 ```bash
-git init
-git add .
-git commit -m "publish 宇宙演变论"
-git branch -M main
-git remote add origin https://github.com/你的用户名/你的用户名.github.io.git
-git push -u origin main
+cd publish
+git add index.html
+git commit -m "update 宇宙演变论"
+git push
 ```
-
-### 3. 开启 Pages
-- 仓库 `Settings` → 左侧 `Pages`。
-- `Build and deployment` → `Source` 选 `Deploy from a branch`，分支 `main`，目录 `/ (root)`。
-- 等 1–5 分钟，访问 `https://你的用户名.github.io` 即可。
 
 ## 说明
 - 本理论是**单篇长文档**，无需 Jekyll / Hugo / Hexo 这类静态生成器；直接一个 `index.html` 最轻量。
