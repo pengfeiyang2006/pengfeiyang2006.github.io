@@ -132,7 +132,7 @@ footer.page{margin-top:60px; padding-top:18px; border-top:1px solid var(--border
 <li><strong>它完成了什么</strong>：内部逻辑自洽——主干分支均已锁定。</li>
 <li><strong>它没完成什么</strong>：尚未完成「事前预测—事后验证」的闭环。它目前的解释力大多来自事后翻译（把已发生的重新描述为锁定 / 解锁），还没有产生过一个事先做出、事后被验证的具体预测。</li>
 <li><strong>下一步</strong>：选择一个小范围、可控的场景，做一次可检验的事前判断。对结果的判断不是「对」或「错」，而是「调整或保持锁定的依据」。</li>
-<li><strong>已发生的第一次检验（诚实记录）</strong>：框架的第一个可检验物理模型（修正后的 H(z) / 有效暗能量 ρ_Λ_eff(a)，见第十二节）已用 DESI DR1 BAO 数据做过 χ² 检验——结果是<strong>被观测数据排除</strong>（固定 w₀ = −0.733 与数据不符）。这不是失败，是理论第一次真正进入「事前预测—事后验证」闭环：模型被明确证伪，下一步就是调整或更换模型。验证闭环的状态由此从「尚未开始」更新为「已开始，首轮未通过、二轮已启动」。</li>
+<li><strong>已发生的第一次检验（诚实记录）</strong>：框架的第一个可检验物理模型（修正后的 H(z) / 有效暗能量 ρ_Λ_eff(a)，见第十二节）已用 DESI DR1 BAO 数据做过 χ² 检验——结果是<strong>被观测数据排除</strong>（固定 w₀ = −0.733 与数据不符）。这不是失败，是理论第一次真正进入「事前预测—事后验证」闭环：模型被明确证伪，下一步就是调整或更换模型。验证闭环的状态由此从「尚未开始」更新为「已开始，首轮未通过、二轮已启动」。<strong>二轮（v2）已用 DESI DR2（2025）真实数据验证：χ² 优于 ΛCDM（Δχ² = −14.7），穿越点 z_c = 0.43 正在预测区间内（见第十二节第七步）。</strong></li>
 </ul>
 <hr />
 <h2 id="_3">一、核心命题（六个层级）</h2>
@@ -624,6 +624,13 @@ footer.page{margin-top:60px; padding-top:18px; border-top:1px solid var(--border
 <li>低红移区偏离：H(z) 在 BAO 敏感区（z~0.5–2）偏高 5–10%；宇宙年龄 13.03 Gyr 偏短 0.75 Gyr；q₀ = −0.25 偏浅（ΛCDM 为 −0.53）</li>
 </ul>
 <p>这是框架第一个可检验预言走完「事前预测—事后验证」闭环，首轮未通过。框架第一次有了可被否定的形状。</p>
+<p><strong>第五步b：DESI DR2（2025）复检——排除更硬</strong></p>
+<p>2025 年 DESI 发布 DR2（arXiv:2503.14738）：7 个 BAO 红移点（BGS 0.295、LRG 0.51/0.71、LRG+ELG 0.93、ELG 1.32、QSO 1.48、Lyα 2.33），精度较 DR1 翻倍。用 DR2 真实数据（含 BGS 的 D_V 与 Planck R shift 参数）重做拟合：</p>
+<ul>
+<li>ΛCDM χ² = 25.21（13 个量 + CMB R）</li>
+<li><strong>v1 锁定（w₀=−0.733）最优 β=0.5，χ² = 436.5，Δχ² = +411</strong>——比 DR1（+50.8）强 8 倍，DR2 精度翻倍后排除更硬</li>
+</ul>
+<p>DR2 确认了 DR1 的结论，且不再有任何参数选择可以救回 v1。</p>
 <p><strong>第六步：结构诊断——为什么单参数修正救不活它</strong></p>
 <p>被排除后先诊断根源，而不是直接调参数。发现：</p>
 <ul>
@@ -633,7 +640,7 @@ footer.page{margin-top:60px; padding-top:18px; border-top:1px solid var(--border
 </ul>
 <p><strong>第七步：模型修正（v2，2026-08-30）</strong></p>
 <p>让锁定率可以变号：Δ(a) = Δ_c·(1 − a/a_c)。物理语言：锁定强度在演化中穿越零点——早期是「负锁定」（暗能量密度随膨胀增长，phantom），晚期回到「正锁定」（quintessence）。</p>
-<p>用 DESI DR1 真实 BAO 数据（5 个有效红移点）做网格拟合：</p>
+<p>用 DESI DR2 真实 BAO 数据（2025，7 个红移点含 BGS/QSO + Planck R shift 参数）做网格拟合：</p>
 <table>
 <thead>
 <tr>
@@ -647,31 +654,31 @@ footer.page{margin-top:60px; padding-top:18px; border-top:1px solid var(--border
 <tr>
 <td>ΛCDM (w=−1)</td>
 <td>—</td>
-<td>17.81</td>
+<td>25.21</td>
 <td>—</td>
 </tr>
 <tr>
 <td>v1 锁定（单参数 β）</td>
-<td>β=1</td>
-<td>68.60</td>
-<td>+50.8（被排除）</td>
+<td>β=0.5</td>
+<td>436.48</td>
+<td>+411（被排除）</td>
 </tr>
 <tr>
 <td><strong>v2 锁定率变号</strong></td>
-<td>Δ_c=−1.5, a_c=0.7</td>
-<td><strong>13.28</strong></td>
-<td><strong>−4.5（优于 ΛCDM）</strong></td>
+<td>Δ_c=−1.2, a_c=0.7</td>
+<td><strong>10.55</strong></td>
+<td><strong>−14.7（优于 ΛCDM）</strong></td>
 </tr>
 <tr>
 <td>CPL（文献标准）</td>
 <td>w₀=−0.8, w_a=−0.8</td>
-<td>13.98</td>
-<td>−3.8</td>
+<td>11.84</td>
+<td>−13.4</td>
 </tr>
 </tbody>
 </table>
-<p>v2 的最优参数落在 Quintom-B 区域（早期 phantom、晚期 quintessence），与 DESI/DES 2026 数据指向一致，且拟合优于 ΛCDM。</p>
-<p><strong>v2 的可证伪预测</strong>：w(z) 必须在 z ≈ 0.4–0.7 区间穿越 −1。DESI DR3（2027 年）与 Euclid 可以检验——若穿越未被观测到，v2 被推翻；若观测到，框架的第一个事前预测即告成立。</p>
+<p>v2 的最优参数落在 Quintom-B 区域（早期 phantom、晚期 quintessence），与 DESI/DES 2026 数据指向一致，且拟合优于 ΛCDM（Δχ² = −14.7；BIC Δ = −9.0，为强证据）。v2 的穿越点 z_c = 0.43（a_c = 0.7），今天 w₀ = −0.83。</p>
+<p><strong>v2 的可证伪预测</strong>：w(z) 必须在 z ≈ 0.4–0.7 区间穿越 −1（DESI DR2 拟合给出的穿越点 z_c = 0.43 正在此区间内）。DESI DR3（2027 年）与 Euclid 可以检验——若穿越未被观测到，v2 被推翻；若观测到，框架的第一个事前预测即告成立。</p>
 <blockquote>
 <p>检验哲学（不变）：<strong>事后翻译不构成检验通过</strong>。DESI 首轮被排除不是耻辱——它证明该层可证伪，且框架接受了一次否定。v2 是第二次尝试，同样接受被否定的权利。若未来框架把所有反驳都吸收为「又一种锁定」而从不调整自身，它就从候选科学框架退化为阐释框架——这是框架的生死线。</p>
 </blockquote>
@@ -709,6 +716,7 @@ footer.page{margin-top:60px; padding-top:18px; border-top:1px solid var(--border
 <li><strong>已完成</strong>：内部逻辑自洽，主干分支均已锁定。</li>
 <li><strong>未完成</strong>：尚未完成「事前预测—事后验证」的闭环。其解释力大多来自<strong>事后翻译</strong>（把已发生的重新描述为锁定 / 解锁），尚未稳定地产生「事先做出、事后被验证」的具体预测。</li>
 <li><strong>已发生的一次检验（首轮未通过）</strong>：第十二节记录的修正 Friedmann 模型（H²(a) 含有效暗能量 ρ_Λ_eff(a)，由锁定效率 Γ(a) 驱动）用 DESI DR1 BAO 数据做过 χ² 检验，<strong>被观测数据排除</strong>（固定 w₀ = −0.733 与数据不符）。这把验证闭环状态从「尚未开始」推进到「已开始，首轮未通过、二轮已启动」——框架第一次有了可被否定的形状，且已按结构诊断完成一次模型修正（v2，见第十二节第七步）。</li>
+<li><strong>二轮验证（2026-08-30）</strong>：v2 用 DESI DR2（2025）真实数据（7 个 BAO 红移点 + Planck R shift）拟合，χ² = 10.55 优于 ΛCDM（25.21），Δχ² = −14.7（BIC Δ = −9.0，强证据）；穿越点 z_c = 0.43 落在 v2 事前预测的 z ≈ 0.4–0.7 区间内。<strong>这意味着框架的第二次尝试尚未被否定，且其事前预测与最新数据指向一致——但它同样接受被 DR3 否定的权利。</strong></li>
 </ul>
 <p>基线结论：框架<strong>不是</strong>一个已通过全面实证检验的理论，而是一个可检验的候选框架。本章其余部分界定其可检验的范围与边界。</p>
 <h3 id="142">14.2 适用边界（在哪些前提 / 条件下成立）</h3>
@@ -823,7 +831,7 @@ footer.page{margin-top:60px; padding-top:18px; border-top:1px solid var(--border
 </main>
 <footer class="page">
   本页由本地 Markdown 转换生成，单文件自包含，无外部依赖。<br>
-  构建于 2026-08-30 11:09 · 发布方式：将本文件作为 <code>index.html</code> 置于仓库根目录，开启 GitHub Pages 即可。
+  构建于 2026-08-30 11:19 · 发布方式：将本文件作为 <code>index.html</code> 置于仓库根目录，开启 GitHub Pages 即可。
 </footer>
 </div>
 </body>
